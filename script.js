@@ -71,9 +71,11 @@ const timeOfTheDay = ['morning', 'afternoon', 'evening']
 
 // Randomly select a quote from the array
 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+// confirgure prmopt to show on node
 const prompt = require("prompt-sync")({sigint: true})
 
-
+// a generate quote function that takes two prompts and outputs a quote based on the validity of the prompts 
 const generateQuote = () => {
     const promptedDay = prompt("Please enter a work day: ", "i.e. Monday")
     const promptedTimeOfDay = prompt("Please enter the time of day: ", "i.e. morning")
